@@ -122,6 +122,23 @@ select {
   border-radius: 5px;
   background-color: rgb(31, 51, 65);
   margin-left: 15px;
+  margin-bottom: 10px;
+  animation: glowing 1300ms infinite;
+}
+
+@keyframes glowing {
+  0% {
+    background-color: rgb(31, 51, 65);;
+    box-shadow: 0 0 5px #9db4be;
+  }
+  50% {
+    background-color: #1f1244;
+    box-shadow: 0 0 10px #9db4be;
+  }
+  100% {
+    background-color: #043f36;
+    box-shadow: 0 0 5px #9db4be;
+  }
 }
 
 .hero h1 {
@@ -183,7 +200,7 @@ select {
   #table-area tr td:first-child {
     font-size: 1.8em;
     font-weight: bold;
-    background: #1b3146;
+    background: #283849;
   }
 
   #table-area tr td:last-child {
